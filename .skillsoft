@@ -1,0 +1,13 @@
+#DOCUMENTATION: https://skillsoftdev.atlassian.net/wiki/spaces/devops/pages/3363799041/Service+Source+of+Truth+-+The+new+.skillsoft+file
+harnessServiceName: ezfzsdsf
+healthCheckAll: true
+healthCheckAllUser: ezfzsdsf-username-<+env.name>
+healthCheckAllPassword: ezfzsdsf-password-<+env.name>
+includeCDTests: [UI,BFF,BE]
+newRelicAppName: ezfzsdsf
+podAnnotations:
+  jiraKey: ENGSEC
+  repo: https://github.skillsoft.com/AioliOrgTest/ezfzsdsf
+  squad: ENGSEC
+runCDTests: false
+slackNotificationChannel: ENGSEC-squad
